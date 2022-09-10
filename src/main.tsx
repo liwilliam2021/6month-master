@@ -6,7 +6,7 @@ import CutePhoto from './CutePhoto.png'
 
 import './index.css'
 
-//Uppercase, only contains letters and spaces
+// Uppercase, only contains letters and spaces
 const MESSAGE = 'HAPPY SIX MONTHS PATAGORGEOUS'
 
 function BlankGuess() {
@@ -33,11 +33,11 @@ const Root: FC = () => {
         {stillPlaying ? 
           <div>
             <TextBox allLines={allLines} setAllLines={setAllLines} message={MESSAGE}/> 
-            {allLines.length > 1 &&
+            {allLines.length > 0 &&
             <div className='flex justify-center text-center mt-3 text-white'> 
               <span className='underline'>Hint:</span> &nbsp;I may have made up one word! 🥰 
             </div>}
-            {allLines.length > 4 &&
+            {allLines.length > 2 &&
             <div className='flex justify-center text-center mt-3 text-white'> 
               You Pata-got-this! 😈
             </div>}
